@@ -8,13 +8,13 @@ class App < Sinatra::Base
 
   post '/team' do
     params.to_s
-    "Team Name: #{params[:name]}\n"
-    "Coach: #{params[:coach]}\n"
-    "Point Guard: #{params[:pg]}\n"
-    "Shooting Guard: #{params[:sg]}\n"
-    "Small Forward: #{params[:sf]}\n"
-    "Power Forward: #{params[:pf]}\n"
-    "Center: #{params[:c]}\n"
+    @name = params[:name]
+    @coach = params[:coach]
+    @pg = params[:pg]
+    @sg = params[:sg]
+    @sf = params[:sf]
+    @pf = params[:pf]
+    @c = params[:c]
   end
 
 end
